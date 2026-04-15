@@ -39,7 +39,7 @@ The dataset contains employee details such as Age, Department, Job Role, Salary,
 - **Features**: 35 columns  
 - **Target Variable**: Attrition (Yes/No)  
 
-📥 [Download Dataset](hr_employee_attrition.csv)
+ [Download Dataset](hr_employee_attrition.csv)
 ---
 
 ##  Data Cleaning (Excel)
