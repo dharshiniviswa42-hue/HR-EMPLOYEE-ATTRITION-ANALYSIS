@@ -33,23 +33,22 @@ This project performs an **end-to-end HR analytics study** on the IBM HR Employe
 
 The dataset contains employee details such as Age, Department, Job Role, Salary, Overtime, Job Satisfaction, Work-Life Balance, and Attrition.
 
-| Attribute | Details |
-|-----------|---------|
-| **Source** | IBM HR Analytics Dataset (Kaggle) |
-| **File** | `hr_employee_attrition.csv` |
-| **Records** | 1,470 employees |
-| **Features** | 35 columns |
-| **Target Variable** | Attrition (Yes / No) |
+- **Source**: IBM HR Analytics Dataset (Kaggle)  
+- **File**: `hr_employee_attrition.csv`  
+- **Records**: 1470 employees  
+- **Features**: 35 columns  
+- **Target Variable**: Attrition (Yes/No)  
 
+📥 [Download Dataset](hr_employee_attrition.csv)
 ---
 
 ##  Data Cleaning (Excel)
 
-- ✅ **Duplicate Check** — No duplicate records found
-- ✅ **Null/Blank Check** — No missing values found
-- ✅ **Data Type Correction** — Numeric columns formatted correctly
-- ✅ **Outlier Detection** — No outliers found in MonthlyIncome
-- ✅ **Irrelevant Columns Noted** — `StandardHours` (constant = 80) and `EmployeeCount` (constant = 1) flagged as non-analytical
+-  **Duplicate Check** — No duplicate records found
+-  **Null/Blank Check** — No missing values found
+-  **Data Type Correction** — Numeric columns formatted correctly
+-  **Outlier Detection** — No outliers found in MonthlyIncome
+-  **Irrelevant Columns Noted** — `StandardHours` (constant = 80) and `EmployeeCount` (constant = 1) flagged as non-analytical
 
 ---
 
