@@ -354,11 +354,11 @@ An interactive two-page dashboard was built to visualize all key findings.
 - Experience Group Wise Attrition (Column Chart)
 - Work Life Balance Wise Attrition (Donut Chart)
 
-📄 [View Full Dashboard PDF](hr_attrition_dashboard.pdf)
+ [View Full Dashboard PDF](hr_attrition_dashboard.pdf)
 
 ---
 
-## 🔍 Key Findings Summary
+##  Key Findings Summary
 
 1. **Attrition Rate = 16.12%** — 90 extra employees left beyond industry benchmark
 2. **Below 25 age group** — highest attrition at 39.18%
@@ -370,7 +370,7 @@ An interactive two-page dashboard was built to visualize all key findings.
 
 ---
 
-## ✅ Business Recommendations
+##  Business Recommendations
 
 | Issue | Recommendation |
 |-------|---------------|
@@ -383,7 +383,7 @@ An interactive two-page dashboard was built to visualize all key findings.
 
 ---
 
-## ✅ Conclusion
+##  Conclusion
 
 This analysis helps organizations identify critical factors driving employee attrition and supports data-driven decision-making to improve retention. The combination of SQL analysis and Power BI visualization provides both technical depth and business clarity.
 
