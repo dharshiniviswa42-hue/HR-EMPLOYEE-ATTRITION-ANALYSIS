@@ -154,11 +154,5 @@ This project highlights how data-driven insights support better business decisio
 | `hr_attrition_dashboard.pdf` | Power BI dashboard |
 | `README.md` | Documentation |
 
----
 
-## 👩‍💻 About
 
-**Viswadharshini**  
-Aspiring Data Analyst | Mathematics Graduate  
-
-Skills: SQL · Excel · Power BI · GitHub  
