@@ -1,11 +1,5 @@
 # 👥 HR Employee Attrition Analysis
 
-![Excel](https://img.shields.io/badge/Excel-Data%20Cleaning-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-Data%20Analysis-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![GitHub](https://img.shields.io/badge/GitHub-Version%20Control-181717?style=for-the-badge&logo=github&logoColor=white)
-
----
 
 ## 📌 Project Overview
 
@@ -36,41 +30,30 @@ This project performs an **end-to-end HR analytics study** on the IBM HR Employe
 
 ## 📂 Dataset
 
-| Attribute | Details |
-|-----------|---------|
-| **Source** | IBM HR Analytics Dataset (Kaggle) |
-| **File** | `hr_employee_attrition.csv` |
-| **Records** | 1,470 employees |
-| **Features** | 35 columns |
-| **Target Variable** | Attrition (Yes / No) |
+The dataset contains employee details such as Age, Department, Job Role, Salary, Overtime, Job Satisfaction, Work-Life Balance, and Attrition.
+
+- **Source**: IBM HR Analytics Dataset (Kaggle)  
+- **File**: `hr_employee_attrition.csv`  
+- **Records**: 1470 employees  
+- **Features**: 35 columns  
+- **Target Variable**: Attrition (Yes/No)  
+
+ [Download Dataset](hr_employee_attrition.csv)
+
 
 ---
 
-## 🧹 Data Cleaning (Excel)
+##  Data Cleaning (Excel)
 
-- ✅ **Duplicate Check** — No duplicate records found
-- ✅ **Null/Blank Check** — No missing values found
-- ✅ **Data Type Correction** — Numeric columns formatted correctly
-- ✅ **Outlier Detection** — No outliers found in MonthlyIncome
-- ✅ **Irrelevant Columns Noted** — `StandardHours` (constant = 80) and `EmployeeCount` (constant = 1) flagged as non-analytical
-
----
-
-## 🔄 Project Workflow
-
-```
-Dataset (Kaggle)
-      ↓
-Excel — Data Cleaning & Preprocessing
-      ↓
-MySQL — SQL Analysis (10 Business Queries)
-      ↓
-Power BI — Interactive Dashboard (2 Pages)
-      ↓
-GitHub — Portfolio Publishing
-```
+-  **Duplicate Check** — No duplicate records found
+-  **Null/Blank Check** — No missing values found
+-  **Data Type Correction** — Numeric columns formatted correctly
+-  **Outlier Detection** — No outliers found in MonthlyIncome
+-  **Irrelevant Columns Noted** — `StandardHours` (constant = 80) and `EmployeeCount` (constant = 1) flagged as non-analytical
 
 ---
+
+
 
 # 🧠 SQL Analysis with Output & Insights
 
@@ -88,7 +71,7 @@ GROUP BY attrition;
 ```
 
 ### Output
-![Q1](SQL_QUERY_01.png)
+![Q1](attrition_rate.png)
 
 ### 💡 Insight
 > The overall attrition rate is **16.12%** — significantly above the industry benchmark of 10%. This means **237 out of 1,470 employees** left the organization, resulting in approximately **90 unexpected departures** beyond acceptable levels, indicating a need for strong retention strategies.
