@@ -1,15 +1,16 @@
-# 👥 HR Employee Attrition Analysis
+#  HR Employee Attrition Analysis
 
 
-## 📌 Project Overview
 
-Employee attrition is a major challenge in organizations. High attrition leads to increased recruitment costs, loss of institutional knowledge, and reduced team productivity.
+##  Project Overview
 
-This project performs an **end-to-end HR analytics study** on the IBM HR Employee Attrition Dataset to uncover the key drivers behind employee turnover and provide actionable business recommendations using SQL, Excel, and Power BI.
+Employee attrition is one of the most critical challenges faced by HR departments worldwide. High attrition leads to increased recruitment costs, loss of institutional knowledge, and reduced team productivity.
+
+This project performs an **end-to-end HR analytics study** on the IBM HR Employee Attrition Dataset to uncover the key drivers behind employee turnover and provide actionable business recommendations.
 
 ---
 
-## 🎯 Objective
+##  Objective
 
 - Understand why employees leave the organization
 - Analyze attrition patterns across age, salary, department, job role, overtime, and more
@@ -17,7 +18,7 @@ This project performs an **end-to-end HR analytics study** on the IBM HR Employe
 
 ---
 
-## 🛠️ Tools Used
+##  Tools Used
 
 | Tool | Purpose |
 |------|---------|
@@ -28,7 +29,7 @@ This project performs an **end-to-end HR analytics study** on the IBM HR Employe
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 The dataset contains employee details such as Age, Department, Job Role, Salary, Overtime, Job Satisfaction, Work-Life Balance, and Attrition.
 
@@ -39,8 +40,6 @@ The dataset contains employee details such as Age, Department, Job Role, Salary,
 - **Target Variable**: Attrition (Yes/No)  
 
  [Download Dataset](hr_employee_attrition.csv)
-
-
 ---
 
 ##  Data Cleaning (Excel)
@@ -53,13 +52,11 @@ The dataset contains employee details such as Age, Department, Job Role, Salary,
 
 ---
 
-
-
-# 🧠 SQL Analysis with Output & Insights
+#  SQL Analysis with Insights
 
 ---
 
-## 🔹 1. Overall Attrition Rate
+##  1. Overall Attrition Rate
 
 ### SQL Query
 ```sql
@@ -73,12 +70,12 @@ GROUP BY attrition;
 ### Output
 ![Q1](attrition_rate.png)
 
-### 💡 Insight
-> The overall attrition rate is **16.12%** — significantly above the industry benchmark of 10%. This means **237 out of 1,470 employees** left the organization, resulting in approximately **90 unexpected departures** beyond acceptable levels, indicating a need for strong retention strategies.
+###  Insight
+> The overall attrition rate is **16.12%** — significantly above the industry benchmark of 10%. This means **237 out of 1,470 employees** left the organization, resulting in approximately **90 unexpected departures** beyond acceptable levels.
 
 ---
 
-## 🔹 2. Attrition by Department
+##  2. Attrition by Department
 
 ### SQL Query
 ```sql
@@ -96,14 +93,14 @@ ORDER BY attrition_rate DESC;
 ```
 
 ### Output
-![Q2](SQL_QUERY_02.png)
+![Q2](department_attrition.png)
 
-### 💡 Insight
-> **Sales department** has the highest attrition rate at **20.63%**, followed by Human Resources at 19.05%. Research & Development, despite having the most employees (961), has the lowest rate at 13.84% — suggesting high-pressure sales targets and management challenges are key drivers of turnover.
+###  Insight
+> **Sales department** has the highest attrition rate at **20.63%**, followed by Human Resources at 19.05%. Research & Development, despite having the most employees, has the lowest rate at 13.84% — suggesting that high-pressure sales targets are a key driver of turnover.
 
 ---
 
-## 🔹 3. Attrition by Age Group
+##  3. Attrition by Age Group
 
 ### SQL Query
 ```sql
@@ -129,14 +126,14 @@ ORDER BY attrition_rate DESC;
 ```
 
 ### Output
-![Q3](SQL_QUERY_03.png)
+![Q3](age_group_attrition.png)
 
-### 💡 Insight
-> **Below 25 age group** has the highest attrition rate at **39.18%** — nearly 4 in 10 young employees are leaving. While the 25-34 group has higher absolute numbers (112 left), rate-based analysis reveals younger employees are proportionally most at risk, likely due to career exploration and better opportunities elsewhere.
+###  Insight
+> **Below 25 age group** has the highest attrition rate at **39.18%** — nearly 4 in 10 young employees are leaving. While the 25-34 group has higher absolute numbers (112 left), the rate-based analysis reveals that younger employees are proportionally most at risk, likely due to career exploration and better opportunities elsewhere.
 
 ---
 
-## 🔹 4. Attrition by Gender
+##  4. Attrition by Gender
 
 ### SQL Query
 ```sql
@@ -154,14 +151,14 @@ ORDER BY attrition_rate DESC;
 ```
 
 ### Output
-![Q4](SQL_QUERY_04.png)
+![Q4](gender_attrition.png)
 
-### 💡 Insight
+###  Insight
 > **Male employees** show a slightly higher attrition rate (**17.01%**) compared to females (**14.80%**). While the gap is not extreme, it suggests male employees may be more actively seeking external opportunities or facing different workplace pressures.
 
 ---
 
-## 🔹 5. Attrition by Job Role
+##  5. Attrition by Job Role
 
 ### SQL Query
 ```sql
@@ -179,20 +176,14 @@ ORDER BY attrition_rate DESC;
 ```
 
 ### Output
-![Q5](SQL_QUERY_05.png)
+![Q5](jobrole_attrition.png)
 
-### 💡 Insight
-> **Sales Representatives** have the highest attrition rate at **39.76%**, followed by Laboratory Technicians at 23.94%. Research Directors and Managers have the lowest rates — suggesting senior and specialized roles have better retention due to higher compensation and job stability.
+###  Insight
+> **Sales Representatives** have the highest attrition rate at **39.76%**, followed by Laboratory Technicians at 23.94%. Research Directors and Managers have the lowest rates, suggesting senior and specialized roles have better retention due to higher compensation and job stability.
 
 ---
 
-## 🔹 6. Attrition by Salary Group
-
-**Salary Group Definition:**
-- Low: Below $3,000
-- Medium: $3,000 – $6,000
-- High: $6,000 – $10,000
-- Very High: Above $10,000
+##  6. Attrition by Salary Group
 
 ### SQL Query
 ```sql
@@ -217,14 +208,14 @@ ORDER BY attrition_rate DESC;
 ```
 
 ### Output
-![Q6](SQL_QUERY_06.png)
+![Q6](salary_attrition.png)
 
-### 💡 Insight
+###  Insight
 > **Low salary employees** (below $3,000/month) have the highest attrition at **28.61%**. As salary increases, attrition drops significantly — Very High salary group shows only 8.90% attrition. This confirms that **compensation is a primary driver of employee turnover**.
 
 ---
 
-## 🔹 7. Overtime Impact on Attrition
+##  7. Overtime Impact on Attrition
 
 ### SQL Query
 ```sql
@@ -242,14 +233,14 @@ ORDER BY attrition_rate DESC;
 ```
 
 ### Output
-![Q7](SQL_QUERY_07.png)
+![Q7](overtime_attrition.png)
 
-### 💡 Insight
-> Employees working overtime have an attrition rate of **30.53%** — nearly **3x higher** than those who don't (10.44%). This is one of the strongest predictors of attrition, highlighting severe burnout and work-life imbalance issues in the organization.
+###  Insight
+> Employees working overtime have an attrition rate of **30.53%** — nearly **3x higher** than those who don't (10.44%). This is one of the strongest predictors of attrition, highlighting severe burnout and work-life imbalance issues.
 
 ---
 
-## 🔹 8. Job Satisfaction Impact on Attrition
+##  8. Job Satisfaction Impact on Attrition
 
 ### SQL Query
 ```sql
@@ -274,14 +265,14 @@ ORDER BY attrition_rate DESC;
 ```
 
 ### Output
-![Q8](SQL_QUERY_08.png)
+![Q8](satisfaction_attrition.png)
 
-### 💡 Insight
-> Employees with **low job satisfaction** have the highest attrition rate at **22.84%**. As satisfaction improves, attrition decreases. Investing in employee engagement, recognition, and workplace culture can significantly reduce turnover.
+###  Insight
+> Employees with **low job satisfaction** have the highest attrition rate at **22.84%**. As satisfaction improves, attrition decreases. This suggests that investing in employee engagement, recognition, and workplace culture can significantly reduce turnover.
 
 ---
 
-## 🔹 9. Attrition by Years at Company
+##  9. Attrition by Years at Company
 
 ### SQL Query
 ```sql
@@ -306,14 +297,14 @@ ORDER BY attrition_rate DESC;
 ```
 
 ### Output
-![Q9](SQL_QUERY_09.png)
+![Q9](experience_attrition.png)
 
-### 💡 Insight
+###  Insight
 > **New employees (0-2 years)** have the highest attrition at **29.82%**. Attrition consistently decreases as tenure increases — Senior employees (10+ years) show only 8.13% attrition. This highlights the critical importance of a strong onboarding program and early employee engagement strategy.
 
 ---
 
-## 🔹 10. Work-Life Balance Impact on Attrition
+##  10. Work-Life Balance Impact on Attrition
 
 ### SQL Query
 ```sql
@@ -338,14 +329,14 @@ ORDER BY attrition_rate DESC;
 ```
 
 ### Output
-![Q10](SQL_QUERY_10.png)
+![Q10](worklife_balance_attrition.png)
 
-### 💡 Insight
-> Employees with **bad work-life balance** show the highest attrition at **31.25%**. Poor work-life balance, combined with overtime and low salary, creates a compounding effect on employee turnover.
+###  Insight
+> Employees with **bad work-life balance** show the highest attrition at **31.25%**. Interestingly, employees rating WLB as "Best" still show 17.65% attrition — suggesting other factors like salary and job role also play a role alongside work-life balance.
 
 ---
 
-## 📊 Power BI Dashboard
+##  Power BI Dashboard
 
 An interactive two-page dashboard was built to visualize all key findings.
 
@@ -363,32 +354,23 @@ An interactive two-page dashboard was built to visualize all key findings.
 - Experience Group Wise Attrition (Column Chart)
 - Work Life Balance Wise Attrition (Donut Chart)
 
-📄 [View Full Dashboard PDF](hr_attrition_dashboard.pdf)
+ [View Full Dashboard PDF](hr_attrition_dashboard.pdf)
 
 ---
 
-## 🔥 Combined Insights
+##  Key Findings Summary
 
-- Employees with **low salary + overtime** show the highest attrition
-- **Younger employees** leave more frequently due to career exploration
-- **Poor work-life balance** strongly increases employee turnover
-- **New joiners (0-2 yrs)** are most vulnerable — onboarding is critical
-- **Sales roles** face the highest pressure-driven attrition
-
----
-
-## 💣 Business Problem
-
-The organization faces high attrition (16.12%) due to:
-- Low compensation for entry-level employees
-- High overtime causing burnout
-- Poor work-life balance practices
-- Lack of early career growth programs
-- High-pressure sales environment
+1. **Attrition Rate = 16.12%** — 90 extra employees left beyond industry benchmark
+2. **Below 25 age group** — highest attrition at 39.18%
+3. **Sales Representatives** — highest role attrition at 39.76%
+4. **Low salary employees** — leave the most at 28.61%
+5. **Overtime employees** — 3x more likely to leave (30.53% vs 10.44%)
+6. **New joiners (0-2 yrs)** — 29.82% attrition rate
+7. **Bad Work-Life Balance** — 31.25% attrition
 
 ---
 
-## ✅ Business Recommendations
+##  Business Recommendations
 
 | Issue | Recommendation |
 |-------|---------------|
@@ -398,17 +380,16 @@ The organization faces high attrition (16.12%) due to:
 | Sales dept attrition | Realistic targets & incentive restructuring |
 | New joiner attrition | Strong 90-day onboarding program |
 | Low WLB attrition | Mental health & wellness initiatives |
-| Low job satisfaction | Regular feedback & recognition programs |
 
 ---
 
-## ✅ Conclusion
+##  Conclusion
 
-This project identifies critical factors driving employee attrition and supports data-driven decision-making to improve retention. The combination of SQL analysis, Power BI visualization, and business insight provides both technical depth and strategic clarity.
+This analysis helps organizations identify critical factors driving employee attrition and supports data-driven decision-making to improve retention. The combination of SQL analysis and Power BI visualization provides both technical depth and business clarity.
 
 ---
 
-## 📁 Repository Files
+##  Repository Files
 
 | File | Description |
 |------|-------------|
@@ -417,16 +398,7 @@ This project identifies critical factors driving employee attrition and supports
 | `hr_attrition_dashboard.pdf` | Power BI Dashboard (2 pages) |
 | `README.md` | Project documentation |
 
----
 
-## 👩‍💻 About
 
-**Viswadharshini**
-Aspiring Data Analyst | Mathematics Graduate
-Skills: SQL · Excel · Power BI · GitHub
-
-*This project is part of my Data Analyst Portfolio.*
-
-Na copy pannikira 
 
 
